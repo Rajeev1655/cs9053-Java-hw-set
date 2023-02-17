@@ -15,6 +15,10 @@ public class Bicycle extends Vehicle{
         this.isElectric = isElectric;
     }
 
+    public Bicycle() {
+        super();
+    }
+
     public void setIsElectric(boolean b) {
         this.isElectric = b;
     }

@@ -17,6 +17,14 @@ public class Vehicle {
         next_id++;
     }
 
+    public Vehicle() {
+        this.wheels = 0;
+        this.cargoSpace = 0;
+        this.color = "";
+        id = next_id;
+        next_id++;
+    }
+
     public void setWheels(int n) {
         this.wheels = n;
     }
@@ -51,14 +59,12 @@ public class Vehicle {
     }
 
     public boolean equals(Object obj) {
-		if(super.equals(obj)) {
-			if(obj instanceof Vehicle) {
-                Vehicle vehicle = (Vehicle) obj;
-                if(this.wheels==vehicle.wheels && this.cargoSpace == vehicle.cargoSpace && this.color == vehicle.color) {
-                    return true;
-                }
-			}
-		}
+        if(obj instanceof Vehicle) {
+            Vehicle vehicle = (Vehicle) obj;
+            if(this.wheels==vehicle.wheels && this.cargoSpace == vehicle.cargoSpace && this.color == vehicle.color) {
+                return true;
+            }
+        }
 		return false;
 	}
 }

@@ -2,8 +2,8 @@ package vehicles;
 
 public class Cargocycle extends Bicycle{
 
-    public Cargocycle(int wheels, int cargo, boolean isElectric) {
-        super(wheels, cargo, isElectric);
+    public Cargocycle(int wheels, int cargo, String color, boolean isElectric) {
+        super(wheels, cargo, color, isElectric);
     }
 
     @Override
@@ -20,7 +20,18 @@ public class Cargocycle extends Bicycle{
     public String toString() {
         String res = "";
         res = "Superclass: { " + super.toString() + " }\n";
-        res += "Class: Cargocycle" + " Wheels: " + super.getWheels() + " Cargo: " + super.getCargoSpace() + " isElectric: " + super.getIsElectric();
+        res += "Class: Cargocycle" + " Wheels: " + super.getWheels() + " Cargo: " + super.getCargoSpace() + " Color: " +
+                this.getColor() + " isElectric: " + super.getIsElectric();
         return res;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(super.equals(obj)) {
+            if(obj instanceof Cargocycle) {
+                return true;
+            }
+        }
+        return false;
     }
 }

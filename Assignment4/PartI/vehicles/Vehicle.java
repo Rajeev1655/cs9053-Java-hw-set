@@ -1,5 +1,7 @@
 package vehicles;
 
+import java.util.Objects;
+
 public class Vehicle {
     private int wheels;
     private int cargoSpace;
@@ -7,9 +9,10 @@ public class Vehicle {
     private int id;
     private static int next_id;
 
-    public Vehicle(int wheels, int carge) {
+    public Vehicle(int wheels, int carge, String color) {
         this.wheels = wheels;
         this.cargoSpace = carge;
+        this.color = color;
         id = next_id;
         next_id++;
     }
@@ -43,22 +46,17 @@ public class Vehicle {
     }
 
     public String toString() {
-        return "id: " + this.id + "Class: Vehical" + " Wheels: " + this.wheels + " Cargo: " + this.cargoSpace;
+        return "id: " + this.id + " Class: Vehical" + " Wheels: " + this.wheels + " Cargo: " + this.cargoSpace
+                + " Color: " + this.color ;
     }
 
     public boolean equals(Object obj) {
 		if(super.equals(obj)) {
-            boolean isEqual = true;
 			if(obj instanceof Vehicle) {
-				Vehicle vehicle=(Vehicle)obj;
-				if(this.wheels!=vehicle.getWheels()) {
-					isEqual = false;
-				}else if(this.cargoSpace!= vehicle.getCargoSpace()) {
-                    isEqual = false;
-                }else if(this.color!=vehicle.getColor()) {
-                    isEqual = false;
+                Vehicle vehicle = (Vehicle) obj;
+                if(this.wheels==vehicle.wheels && this.cargoSpace == vehicle.cargoSpace && this.color == vehicle.color) {
+                    return true;
                 }
-                return isEqual;
 			}
 		}
 		return false;

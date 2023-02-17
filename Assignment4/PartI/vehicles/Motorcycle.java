@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Motorcycle extends Vehicle{
     private String[] accessories;
 
-    public Motorcycle(String[] accList) {
-        super(2, 0);
+    public Motorcycle(String[] accList, String color) {
+        super(2, 0, color);
         this.accessories = accList;
     }
 
@@ -31,7 +31,21 @@ public class Motorcycle extends Vehicle{
     public String toString() {
         String res = "";
         res = "Superclass: { " + super.toString() + " }\n";
-        res += "Class: Motorcycle" + " Wheels: " + super.getWheels() + " Cargo: " + super.getCargoSpace() + " accessories: " + Arrays.toString(this.accessories);
+        res += "Class: Motorcycle" + " Wheels: " + super.getWheels() + " Cargo: " + super.getCargoSpace() + " Color: " +
+                this.getColor() + " accessories: " + Arrays.toString(this.accessories);
         return res;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(super.equals(obj)) {
+            if(obj instanceof Motorcycle) {
+                Motorcycle motorcycle = (Motorcycle) obj;
+                if(this.accessories==motorcycle.accessories) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

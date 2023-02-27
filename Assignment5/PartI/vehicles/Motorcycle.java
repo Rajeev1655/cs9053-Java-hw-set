@@ -10,6 +10,10 @@ public class Motorcycle extends Vehicle{
         this.accessories = accList;
     }
 
+    public Motorcycle(){
+        super();
+    }
+
     public void setAccessories(String[] accList) {
         this.accessories = accList;
     }

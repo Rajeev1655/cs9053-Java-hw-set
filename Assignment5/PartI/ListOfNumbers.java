@@ -1,19 +1,22 @@
 import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
+import java.io.File;  // Import the File class
+import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
  
 public class ListOfNumbers {
 	
-    private ArrayList<RDFTriple<Integer, Integer, Integer>> pairList;
+    private ArrayList<RDFTriple<Integer, Integer, Integer>> rdfTripleList;
     private String fileName;
  
     public ListOfNumbers () {
         // create an ArrayList of Pairs of Integers
-        pairList = new ArrayList<>();
+        this.rdfTripleList = new ArrayList<>();
     }
     
-    public ArrayList<RDFTriple<Integer, Integer, Integer>> getPairList() {
-    	return this.pairList;
+    public ArrayList<RDFTriple<Integer, Integer, Integer>> getRdfTripleList() {
+    	return this.rdfTripleList;
     }
     
     public void createList() {
@@ -23,18 +26,49 @@ public class ListOfNumbers {
     		Integer number3 = (int) (Math.random()*10000);
     		// fill the existing list with RDFTriple objects
     		// of three numbers.
-            pairList.add(new RDFTriple<Integer,Integer,Integer>(number1, number2, number3));
-    	}
+            rdfTripleList.add(new RDFTriple<Integer, Integer, Integer>(number1, number2, number3));
+        }
     }
     
 
     public ListOfNumbers (String fileName) {
     	this();
-    	this.fileName = fileName;	
+    	this.fileName = fileName;
     }
     
     public void readList() {
-    	
+        rdfTripleList = new ArrayList<RDFTriple<Integer, Integer, Integer>>();
+        try{
+            File myObj = new File("./numberfile.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String line = myReader.nextLine();
+                System.out.println(line);
+
+                String[] intList = line.split(" ");
+                RDFTriple<Integer, Integer, Integer> newItem;
+                int num1 = 0, num2 = 0, num3 =0;
+
+                for (int i = 0; i < intList.length; i++) {
+                    switch (i) {
+                        case 0:
+                            num1 = Integer.parseInt(intList[i]);
+                        case 1:
+                            num2 = Integer.parseInt(intList[i]);
+                        case 2:
+                            num3 = Integer.parseInt(intList[i]);
+                        default:
+                            break;
+                    }
+                }
+                newItem = new RDFTriple<Integer, Integer, Integer>(num1, num2, num3);
+                rdfTripleList.add(newItem);
+                System.out.println("Added new triple:" + newItem.toString());
+            }
+            System.out.println("------ Added " + rdfTripleList.size() + " triples to List ------");
+        }catch (Exception e) {
+            System.out.println(e.toString());
+        }
     }
     
     public void writeList() {
@@ -42,8 +76,8 @@ public class ListOfNumbers {
         try {
             System.out.println("Entering try statement");
             out = new PrintWriter(new FileWriter(this.fileName));
-            for (int i = 0; i < pairList.size(); i++)
-                out.println(pairList.get(i).getKey() + " " + pairList.get(i).getValue());
+            for (int i = 0; i < rdfTripleList.size(); i++)
+                out.println(rdfTripleList.get(i).getSubj() + " " + rdfTripleList.get(i).getPred() + " " + rdfTripleList.get(i).getObj());
         } catch (IndexOutOfBoundsException e) {
             System.err.println("Caught IndexOutOfBoundsException: " +
                                  e.getMessage());
@@ -68,18 +102,24 @@ public class ListOfNumbers {
             while ((line = input.readLine()) != null) {
                 System.out.println(line);
             }
-            return;
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             if (input != null) {
-                input.close();
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
     
     public static void main(String[] args) {
-    	ListOfNumbers listOfNumbers = new ListOfNumbers("numberfile.txt");
-    	ListOfNumbers.cat("numberfile.txt");
+    	ListOfNumbers listOfNumbers = new ListOfNumbers("outFile.txt");
+//    	ListOfNumbers.cat("numberfile.txt");
     	listOfNumbers.readList();
+    	listOfNumbers.writeList();
     }
 
 }

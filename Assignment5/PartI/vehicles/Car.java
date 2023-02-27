@@ -13,6 +13,8 @@ public class Car extends Vehicle{
         
     }
 
+    public Car(){super();};
+
     public void setDoors(int n) {
         this.doors = n;
     }

@@ -6,6 +6,8 @@ public class Cargocycle extends Bicycle{
         super(wheels, cargo, color, isElectric);
     }
 
+    public Cargocycle(){super();}
+
     @Override
     public int getID() {
         return super.getID();

@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8af9712-b705-4b98-abff-ae5cd859e7cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Midterm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question1/complexmatrix/IncompatibleMatrixException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question1/complexmatrix/MatrixDimensionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question1/complexmatrix/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Affiliate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Faculty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/GraduateStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/Undergraduate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Question2/university/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment5/out/production/Assignment5/interfaceHellow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment5/out/production/Assignment5/interfaceHi$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment5/out/production/Assignment5/interfaceHi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Midterm.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Midterm.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question1/complexmatrix/Complex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question1/complexmatrix/Complex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question1/complexmatrix/ComplexMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question1/complexmatrix/ComplexMatrix.java" afterDir="false" />
+    <list default="true" id="39ca413b-f5a6-406b-8454-45c95b8c1971" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Question2/university/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question2/university/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question2/university/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question2/university/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/Complex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/ComplexMatrix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/IncompatibleMatrixException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/MatrixDimensionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Affiliate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Faculty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/GraduateStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Undergraduate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -43,7 +32,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Ma9Z68bmwShu8QMiNU5AkdSDob" />
+  <component name="ProjectId" id="2Mhj8J13EObZbnBSe8Bu36FSqqi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,25 +42,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.complexmatrix.main">
-    <configuration name="complexmatrix.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="complexmatrix.main" />
-      <module name="Midterm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="complexmatrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="university.main" />
       <module name="Midterm" />
@@ -87,7 +61,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.complexmatrix.main" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -95,27 +68,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8af9712-b705-4b98-abff-ae5cd859e7cd" name="Changes" comment="" />
-      <created>1677994880865</created>
+      <changelist id="39ca413b-f5a6-406b-8454-45c95b8c1971" name="Changes" comment="" />
+      <created>1678226550529</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677994880865</updated>
-      <workItem from="1677994883994" duration="451000" />
-      <workItem from="1678043450084" duration="24582000" />
+      <updated>1678226550529</updated>
+      <workItem from="1678226552886" duration="391000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

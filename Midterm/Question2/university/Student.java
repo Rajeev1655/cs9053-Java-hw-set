@@ -23,4 +23,16 @@ public abstract class Student extends Person{
     public String toString() {
         return "Student: " + super.toString() + " department: " + department;
     }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof Student) {
+            Student s = (Student) obj;
+            if (super.equals(s)) {
+                if (getDepartment().equals(s.getDepartment())) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

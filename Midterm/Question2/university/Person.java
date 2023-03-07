@@ -2,7 +2,7 @@ package university;
 
 import java.util.ArrayList;
 
-public class Person {
+public abstract class Person {
 	private final int ID;
 	private int age;
 	private static int nextID = 0;
@@ -36,7 +36,7 @@ public class Person {
 	}
 
 	public String toString() {
-		return "ID: " + ID + " Age: " + age;
+		return "Person: ID: " + ID + " Age: " + age;
 	}
 
 	public boolean equals(Object obj) {

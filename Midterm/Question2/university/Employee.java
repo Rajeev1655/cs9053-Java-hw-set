@@ -23,4 +23,16 @@ public abstract class Employee extends Person{
     public String toString() {
         return "Employee: " + super.toString() + " salary: " + salary;
     }
+
+    public boolean equals(Object obj) {
+        if (obj instanceof Employee) {
+            Employee other = (Employee) obj;
+            if (super.equals(other)) {
+                if (getSalary() == other.getSalary()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

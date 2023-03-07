@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39ca413b-f5a6-406b-8454-45c95b8c1971" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question2/university/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question2/university/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Question2/university/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question2/university/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/Complex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/ComplexMatrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/IncompatibleMatrixException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/MatrixDimensionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/complexmatrix/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Affiliate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Faculty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/GraduateStudent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Staff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/Undergraduate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Midterm/university/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Question1/complexmatrix/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Question1/complexmatrix/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +22,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="complexmatrix.main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="complexmatrix.main" />
+      <module name="Midterm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="complexmatrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="university.main" />
       <module name="Midterm" />
@@ -62,6 +60,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
+        <item itemvalue="Application.complexmatrix.main" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678226550529</updated>
-      <workItem from="1678226552886" duration="391000" />
+      <workItem from="1678226552886" duration="907000" />
     </task>
     <servers />
   </component>

@@ -35,7 +35,7 @@ public class Packet {
 	}
 
 	public static void main(String[] args) {
-		PriorityQueue<Packet> pq = new PriorityQueue<>((o1, o2) -> o2.getPriority() - o1.getPriority());
+		PriorityQueue<Packet> pq = new PriorityQueue<>((o1, o2) -> o2.getPriority() - o1.getPriority()); // descending order
 				
 		for (int i=0;i<10;i++) {
 			Byte[] payload = new Byte[256];

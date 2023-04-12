@@ -2,16 +2,26 @@ package chat;
 
 
 import javax.swing.*;
-import java.awt.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.HashMap;
 
 
 public class ChatServer extends JFrame implements Runnable {
 
 	JTextArea TextField;
-	JMenuItem Exit;
-	JMenu File;
 	private static int WIDTH = 400;
 	private static int HEIGHT = 300;
+
+	int port = 8000;
+	String host = "serverHost";
+	ServerSocket serverSocket;
+	Socket socket;
+	HashMap<Integer, Socket> clients;
 	
 	public ChatServer() {
 		super("Chat Server");
@@ -41,11 +51,32 @@ public class ChatServer extends JFrame implements Runnable {
 
 	public static void main(String[] args) {
 		ChatServer chatServer = new ChatServer();
+		chatServer.run();
 	}
 
 	@Override
-	public void run() {
-		
+	public void run() throws RuntimeException {
+		clients = new HashMap<>();
+		int clientCount;
+		try {
+			serverSocket = new ServerSocket(port);
+			TextField.append("Server started at " + new java.util.Date() + "\n");
+			while (true) {
+				// Listen for a new connection request
+				socket = serverSocket.accept();
+				ClientHandler thread = new ClientHandler(socket, clients);
+				thread.start();
+				clientCount = thread.getMyCount();
+				clients.put(clientCount, socket);
+				InetAddress inetAddress = socket.getInetAddress();
+				int port = socket.getPort();
+				TextField.append("Starting thread for client " + clientCount + " at " + new java.util.Date() + "\n");
+				TextField.append("Client " + clientCount + "'s host name is " + inetAddress.getHostName() + "\n");
+				TextField.append("Client " + clientCount + "'s IP Address and port is " + inetAddress.getHostAddress() + ":" + port + "\n");
+			}
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }
 
